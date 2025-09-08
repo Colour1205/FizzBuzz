@@ -10,6 +10,7 @@ public class MultiplesDefaultTest {
 
     // TODO: When you are ready to test task X,
     //  copy this file into the test folder.
+    @org.junit.Test
     @Test
     public void testDefault() {
         assertEquals(466,

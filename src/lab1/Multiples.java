@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 public class Multiples {
     public static void main(String[] args) {
-        int count = multiples(9, 3, 5);
+        int count = multiples();
         System.out.println(count);
     }
 
-    static int multiples(int n, int a, int b) {
+    public static int multiples(int n, int a, int b) {
         int count = 0;
         for (int i = 1; i < n; i++){
             if (i % a == 0 || i % b == 0) {
@@ -17,5 +17,9 @@ public class Multiples {
         }
 
         return count;
+    }
+
+    public static int multiples(){
+        return Multiples.multiples(1000, 3, 5);
     }
 }
