@@ -9,14 +9,8 @@ public class Multiples {
     }
 
     public static int multiples(int n, int a, int b) {
-        int count = 0;
-        for (int i = 1; i < n; i++){
-            if (i % a == 0 || i % b == 0) {
-                count++;
-            }
-        }
-
-        return count;
+        if (a==b) return (int) ((double) (n - 1 )/ a);
+        return (int) (n * ((double)(a + b - 1) /(a * b)));
     }
 
     public static int multiples(){
